@@ -21,7 +21,7 @@ def svd_bpso(image, p_n = None, n_iterations = None)
         
     # Apply SVD on the input matrix X
     U, sig, VT = svd.Block_SVD(X)
-    sig = np.diag(S)
+    sig = np.diag(sig)
 
     #initializing PSO parameters
     c1 = 2 # Cognitive component
